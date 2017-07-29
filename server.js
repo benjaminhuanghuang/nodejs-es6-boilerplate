@@ -1,9 +1,12 @@
 import express from 'express';
-import {app} from './app';
 
-//here routes defined
-import './routes';
+import {routes} from './routes';
 
-app.listen(3000, () => {
+const server = express();
+
+// Routers
+server.use('/', routes);
+
+server.listen(3000, () => {
   console.log('ES6 application listening on port 3000!');
 });

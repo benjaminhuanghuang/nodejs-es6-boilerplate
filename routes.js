@@ -1,6 +1,9 @@
-import {app} from './consts';
+import express from 'express';
 
+const routes = express.Router();
 
-app.get('/', (req, res) => {
+routes.get('/', (req, res) => {
   res.send('Hello world node.js es6 app.');
 });
+
+export { routes }; 

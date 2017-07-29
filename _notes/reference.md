@@ -5,3 +5,5 @@
 ## https://github.com/JustinDrake/node-es6-examples
 
 ## How to use ES6 in NodeJS
+
+## Babel 入门教程
