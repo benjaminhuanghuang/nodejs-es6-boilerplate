@@ -1,3 +1,3 @@
 import {HelloWorld} from "./helloworld"
 
-new HelloWorld.sayHello();
+new HelloWorld().sayHello();

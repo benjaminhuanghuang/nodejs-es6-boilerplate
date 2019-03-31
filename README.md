@@ -20,7 +20,7 @@ Install
 Creat babel in .babelrc 
 
 or package.json
-```
+```f
 "babel": {
   "presets": ["env"]
 }
@@ -31,3 +31,13 @@ or package.json
 
   "build": "babel ./ --ignore node_modules,test -d dist",
 ```
+
+## Setup VS code for debugging
+Add config into .vscode/launch.json
+```
+  "program": "${workspaceFolder}/sample/index.js",
+  "outFiles": ["${workspaceFolder}/dist/**/*.js"]
+```
+There can be multiple config in launch.json. 
+Then we can select in the DEBUG drop down list
+ 
